@@ -300,7 +300,7 @@ def main():
         print("Random Number is : ", random_number)
         while True :
             user_input = input("Input guess number : ")
-            if user_input == "0" :
+            if user_input == '0' :
                 break
         # ===Modify codes below=============
         # 위의 코드를 포함하여 자유로운 수정이 가능함
@@ -314,16 +314,14 @@ def main():
                     break
                 else :
                     continue
-        if user_input == "0" :
+        if user_input == '0' :
             break               
         user_intention = input("You win, one more(Y/N) ?:")
         while True :
             if is_yes(user_intention) :
                 break
-            elif is_no(user_intention) :
+            elif is_no(user_intention) or user_intention == '0' :
                 game_end_signal = 1
-                break
-            elif user_intention == "0" :
                 break
             else :
                 print("Wrong Input, Input again")
