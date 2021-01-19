@@ -306,7 +306,7 @@ def main():
             print("Random Number is : ", random_number)
 
         while True :
-            user_input = input("Input guess number : ")
+            user_input = input("Input guess number :")
             if user_input == '0' :
                 break
         
