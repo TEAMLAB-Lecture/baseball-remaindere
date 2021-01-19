@@ -325,7 +325,7 @@ def main():
             break
 
         while True :
-            user_intention = input("You win, one more(Y/N) ?:")
+            user_intention = input("You win, one more(Y/N)?")
             if is_yes(user_intention) :
                 break
             elif is_no(user_intention) or user_intention == '0' :
