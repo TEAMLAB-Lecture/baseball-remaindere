@@ -170,7 +170,7 @@ def get_not_duplicated_three_digit_number():
     
     result = "".join(num_list)
     # ==================================
-    return result
+    return int(result)
 
 
 def get_strikes_or_ball(user_input_number, random_number):
@@ -306,7 +306,7 @@ def main():
             print("Random Number is : ", random_number)
 
         while True :
-            user_input = input("Input guess number :")
+            user_input = input("Input guess number : ")
             if user_input == '0' :
                 break
         
