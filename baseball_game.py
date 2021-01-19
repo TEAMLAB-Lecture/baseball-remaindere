@@ -301,7 +301,7 @@ def main():
         while True :
             user_input = input("Input guess number : ")
             if user_input == "0" :
-                return -1
+                break
         # ===Modify codes below=============
         # 위의 코드를 포함하여 자유로운 수정이 가능함
             if is_validated_number(user_input) == False :
@@ -314,15 +314,16 @@ def main():
                     break
                 else :
                     continue
-
+        if user_input == "0" :
+            break               
         user_intention = input("You win, one more(Y/N) ?:")
-        if user_intention == "0" :
-            return -1
         while True :
             if is_yes(user_intention) :
                 break
             elif is_no(user_intention) :
                 game_end_signal = 1
+                break
+            elif user_intention == "0" :
                 break
             else :
                 print("Wrong Input, Input again")
